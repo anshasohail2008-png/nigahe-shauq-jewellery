@@ -3,7 +3,7 @@ import { ThemeProvider } from '@/context/ThemeContext';
 import { ToastProvider } from '@/context/ToastContext';
 import { CartProvider } from '@/context/CartContext';
 import { WishlistProvider } from '@/context/WishlistContext';
-import { Layout } from '@/components/layout/Layout';
+import { Layout } from '@/pages/components/layout/Layout';
 import { HomePage } from '@/pages/HomePage';
 import { ShopPage } from '@/pages/ShopPage';
 import { ProductDetailPage } from '@/pages/ProductDetailPage';
