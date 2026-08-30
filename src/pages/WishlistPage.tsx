@@ -5,7 +5,7 @@ import { useCart } from '@/context/CartContext';
 import { useToast } from '@/context/ToastContext';
 import { products } from '@/data/products';
 import { formatPrice } from '@/lib/utils';
-import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { Breadcrumbs } from '@/pages/components/ui/Breadcrumbs';
 import { Badge } from '@/components/ui/Badge';
 import { Rating } from '@/components/ui/Rating';
 import { EmptyState } from '@/components/ui/EmptyState';
