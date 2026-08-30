@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
 import { CartDrawer } from './CartDrawer';
-import { ToastContainer } from '@/components/ui/Toast';
+import { ToastContainer } from '@/pages/components/ui/Toast';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
