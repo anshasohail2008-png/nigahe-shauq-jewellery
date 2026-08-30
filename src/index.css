@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-ivory text-charcoal-700 font-sans antialiased;
+    font-feature-settings: "ss01", "cv01";
+  }
+  .dark body {
+    @apply bg-charcoal-900 text-charcoal-100;
+  }
+  ::selection {
+    @apply bg-champagne-300 text-charcoal-800;
+  }
+}
+
+@layer components {
+  .container-lux {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .skeleton {
+    @apply bg-charcoal-200/40 dark:bg-charcoal-700/40;
+    background-image: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+    background-size: 1000px 100%;
+    @apply animate-shimmer;
+  }
+  .link-underline {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  .text-balance { text-wrap: balance; }
+}
