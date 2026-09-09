@@ -1,5 +1,5 @@
 import type { Product, Review } from '@/types';
-import banglesPhoto from '@/assets/bangles_photo.png';
+import banglesPhoto from '@/assets/bangles_photo(1).png';
 const img = (id: string, n: number) =>
   `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=900`;
 
