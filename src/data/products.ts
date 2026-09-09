@@ -1,5 +1,5 @@
 import type { Product, Review } from '@/types';
-
+import banglesPhoto from '@/assets/bangles_photo.png';
 const img = (id: string, n: number) =>
   `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=900`;
 
@@ -114,7 +114,7 @@ export const categories: { name: string; image: string; description: string }[] 
   { name: 'Earrings', image: img(EARRINGS[0]), description: 'Studs, drops & jhumkas' },
   { name: 'Necklaces', image: img(NECKLACES[0]), description: 'Pendants, chokers & layers' },
   { name: 'Bracelets', image: img(BRACELETS[0]), description: 'Tennis, cuffs & chains' },
-  { name: 'Bangles', image: img(BANGLES[0]), description: 'Kadas & stack bangles' },
+  { name: 'Bangles', image: banglesPhoto, description: 'Kadas & stack bangles' },
   { name: 'Charms', image: img(CHARMS[0]), description: 'Build-your-own pieces' },
   { name: 'Jewellery Sets', image: img(SETS[0]), description: 'Coordinated bridal sets' },
 ];
